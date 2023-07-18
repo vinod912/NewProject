@@ -1,6 +1,7 @@
 pipeline {
      agent {
           label 'windows_client'
+     }
          stages {
                 stage('---Clean---') {
                       steps {
