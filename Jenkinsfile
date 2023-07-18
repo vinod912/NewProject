@@ -1,6 +1,6 @@
 pipeline {
      agent {
-          label 'ubuntu'
+          label 'windows11'
          stages {
                 stage('---Clean---') {
                       steps {
