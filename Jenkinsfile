@@ -23,7 +23,7 @@ pipeline {
               stage ('Deploy') {
       steps {
         script {
-          deploy adapters: [tomcat8.5(credentialsId: '8929a8ad-ee8b-4a21-a899-f4f570b16f14', path: '', url: 'http://localhost:8090')], contextPath: '/pipeline', onFailure: false, war: 'WEB-INF\lib\*.jar' 
+          deploy adapters: [tomcat8.5(credentialsId: '8929a8ad-ee8b-4a21-a899-f4f570b16f14', path: '', url: 'http://localhost:8090')], contextPath: '/pipeline', onFailure: false, jar: 'WEB-INF\lib\*.jar' 
         }
       }
     }
