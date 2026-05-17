@@ -1,6 +1,6 @@
 pipeline {
      agent {
-          label 'windows_client'
+          label 'devops-tools'
      }
          stages {
                 stage('---Clean---') {
