@@ -1,6 +1,6 @@
 pipeline {
      agent {
-          label 'devops-tools'
+          label 'devops-agent'
      }
          stages {
                 stage('---Clean---') {
